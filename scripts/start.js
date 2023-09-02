@@ -4,7 +4,7 @@ const config = {
     countTailWins: 2,
     countColors: 6,
     maxCountUpdates: 3,
-    countProgress: 60,
+    countProgress: 50,
     maxcountSteps: 10,
     tailSize: 200,
     tailClass: 'tail',
