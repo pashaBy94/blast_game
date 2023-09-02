@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bangers', cursive;
+    font-size: 80px;
+    letter-spacing: 0.9;
+    color: white;
+}
+
+.game {
+    background-color: #A2A2A2;
+    overflow: hidden;
+    width: 3530px;
+    height: 2500px;
+}
+
+.game_panel {
+    height: 290px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+.game_panel-count,
+.game_button_start,
+.game_panel-glasses,
+.game_button_refresh {
+    height: 150px;
+    border-radius: 75px;
+    background: linear-gradient(#FF91DE, #AE004A, #E60360);
+    position: relative;
+    padding-left: 190px;
+    padding-right: 115px;
+    line-height: 150px;
+    box-shadow: 0 2px 2px 2px #777D83;
+}
+
+.game_panel-count-radial,
+.game_panel-glasses-radial {
+    background-color: #B5B5B5;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: -8px;
+}
+
+.game_panel-progress-wrap {
+    width: 1325px;
+    position: relative;
+}
+
+.game_panel-progress {
+    position: relative;
+    top: -55px;
+    left: 0;
+    width: 1325px;
+    padding: 30px;
+    padding-top: 80px;
+    background: linear-gradient(#00214B, #003573);
+    border-radius: 75px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.game_panel-progress-load {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(#00071F, #002155);
+    box-shadow: 0 2px 4px 1px #005EA7;
+    border-radius: 75px;
+    padding: 4px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    border-radius: 75px;
+    background: linear-gradient(#E3FFC8, #00FD00, #00A000, #00FD00);
+}
+
+.panel_glasses-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_panel-glasses,
+.game_button_refresh {
+    background: linear-gradient(#FF91FF, #B009BD, #680276, #840DE9);
+    margin-right: 25px;
+}
+
+.game_panel-glasses-add {
+    width: 122px;
+    height: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(#FFF8CF, #FFD500, #944E00);
+    box-shadow: 0 2px 2px 2px #777D83;
+}
+
+.panel_pause-wrap {
+    cursor: pointer;
+    width: 245px;
+    height: 245px;
+    background-color: #00CEEA;
+    border-radius: 75px;
+    padding: 5px;
+    box-shadow: 0 2px 2px 2px #777D83;
+}
+
+.game_panel-pause {
+    background-color: #00E6F4;
+    border-radius: 55px;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    border-radius: 55px;
+}
+
+.game_panel-pause-cont {
+    background-color: #00539E;
+    height: 100%;
+    border-radius: 55px;
+    width: 100%;
+    box-shadow: inset 0 0 6px 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.game_panel-pause-cont::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 55px;
+    box-shadow: 0 0 12px 4px #00667B;
+}
+
+
+
+.game_body {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.game_body-place {
+    min-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.game_body-poly-wrapp {
+    padding: 25px;
+    border-radius: 75px;
+    background-color: #64CAD9;
+    box-shadow: inset 0 0 6px 1px white;
+
+}
+
+.game_body-poly {
+    position: relative;
+    border-radius: 75px;
+    background-color: #001E3B;
+    padding: 40px;
+    box-shadow: inset 0 0 6px 1px white;
+
+}
+
+.body_poly-content {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.game_body-poly::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 75px;
+    box-shadow: 0 0 22px 6px #1A505E;
+}
+
+.game_body-info {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_info_glass-wrap {
+    padding: 25px;
+    border-radius: 75px;
+    width: 1080px;
+    background-color: #00FFFF;
+    margin-bottom: 100px;
+}
+
+.game_info_glass {
+    border-radius: 75px;
+    background-color: #00539E;
+    height: 100%;
+    position: relative;
+    box-shadow: inset 0 0 6px 1px white;
+    display: flex;
+    padding: 45px 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.game_info_glass::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 75px;
+    box-shadow: 0 0 22px 6px #1A505E;
+}
+
+.game_info_glass-level {
+    font-size: 3em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 490px;
+    height: 490px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px 3px white;
+    background: linear-gradient(-20deg, #FF91DE, #F20061, #B30556, #F20061, #FF108E);
+    margin-bottom: 55px;
+}
+
+.game_info_glass-level::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 0 rgb(236, 236, 236);
+}
+
+.game_info_glass-level::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle closest-corner at 61% 71%, transparent 110%, rgba(255, 255, 255, 0.363) 1%);
+}
+
+.game_info_glass-level .blick {
+    top: 50px;
+    right: 110px;
+}
+
+.game_info_glass-count {
+    width: 100%;
+    padding: 40px;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 10px 3px #00193D;
+    border-radius: 75px;
+    position: relative;
+    background: linear-gradient(#00193D, #003778);
+}
+
+.game_info_glass-count::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 75px;
+    box-shadow: 0 0 20px 3px #006FBF;
+}
+
+.game_info_bonus-text {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.game_info_bonus-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game_info_bonus-item-wrap {
+    margin-right: 40px;
+    border-radius: 55px;
+    width: 360px;
+    height: 360px;
+    padding: 7px;
+    background-color: #FF82FE;
+    box-shadow: 0 0 20px 3px #7f8283;
+}
+
+.light_bust {
+    animation: lightBust .9s .1s infinite linear;
+}
+
+@keyframes lightBust {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: rotate(5deg) scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: rotate(-5deg) scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.game_info_bonus-item-wrap:last-child {
+    margin-right: 0;
+
+}
+
+.game_info_bonus-item {
+    cursor: pointer;
+    border-radius: 55px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    background: linear-gradient(#FF97FF, #E43CE8, #C41BCE, #8810F6);
+}
+.body_item-imag{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.body_item-imag-b1,
+.body_item-imag-b2{
+    position: relative;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+.body_item-imag-b1{
+    background: linear-gradient(#ff9797, #e83c3c, #ce1b1b, #f61010);
+}
+.body_item-imag-b2{
+    background: linear-gradient(#b397ff, #613ce8, #3c1bce, #2710f6);
+    margin-left: -50px;
+}
+.bonus_item-coins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 75px;
+    background: linear-gradient(#300049, #53025B);
+}
+
+.bonus_item-coins-radial {
+    height: 0.9em;
+    width: .9em;
+    border-radius: 50%;
+    background-color: #B5B5B5;
+    margin-left: 20px;
+}
+
+.game_button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.game_button_start,
+.game_button_refresh {
+    display: flex;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+    margin-right: 240px;
+}
+
+.button_refresh {
+    margin-right: 30px;
+}
+
+.game_button_refresh,
+.game_button_start {
+    width: 400px;
+}
+
+.reload {
+    width: 60px;
+    height: 60px;
+}
+
+.blick {
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    right: 40px;
+    top: 15px;
+}
+
+.blick::after {
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 40px;
+    border-radius: 50%;
+    rotate: 40deg;
+    background: radial-gradient(white 30%, transparent 70%);
+}
+
+.blick::before {
+    content: '';
+    width: 25px;
+    position: absolute;
+    height: 15px;
+    top: 100%;
+    left: 100%;
+    border-radius: 50%;
+    rotate: 45deg;
+    background: radial-gradient(white 5%, transparent 60%);
+}
+
+.remove {
+    background-color: transparent !important;
+}
+
+.tail {
+    position: absolute;
+    box-sizing: border-box;
+    border: '1px solid transparent';
+    cursor: pointer;
+    background-size: 100%;
+    transition: all .5s .2s ease-in-out;
+    padding: 10px;
+    font-size: 0;
+}
+
+.coin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 25px;
+    height: 90%;
+    width: 90%;
+    box-shadow: 2px -2px 5px red,
+        5px -5px 5px red,
+        8px -8px 5px red,
+        inset 0 0 10px 8px rgba(161, 161, 161, 0.192);
+}
+
+.coin::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 40px 0 rgb(236, 236, 236);
+}
+
+.coin::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 25px;
+    background: radial-gradient(circle closest-corner at 61% 71%, transparent 110%, rgba(255, 255, 255, 0.263) 1%);
+}
+
+.coin .blick {
+    top: 10px;
+    right: 30px;
+}
+
+.coin:hover {
+    animation: coin .9s .1s infinite linear;
+}
+
+@keyframes coin {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: rotate(5deg) scale(0.9);
+
+    }
+
+    50% {
+        transform: scale(1);
+
+    }
+
+    75% {
+        transform: rotate(-5deg) scale(0.9);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bi {
+    opacity: 0.9;
+}
+
+
+.wins {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.delete_tail {
+    animation-name: my-animation;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes my-animation {
+    5% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        border-radius: 50%;
+        transform: rotate(210deg) scale(0.1);
+    }
+}

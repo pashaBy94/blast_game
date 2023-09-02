@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
+.wrap {
+    opacity: 0;
+    transition: all .3s .3s ease;
+}
+
+.wrap_show {
+    opacity: 1;
+}
+
+.content {
+    background-color: #BFBFBF;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    background: #dadada;
+    box-shadow: 0 0 0 #cccccc,
+        0 0 0 #ffffff,
+        10px 10px 10px #cccccc inset,
+        -10px -10px 10px #ffffff inset;
+    animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s 1 alternate;
+}
+
+@keyframes anime {
+    0% {
+        width: 200px;
+        height: 200px;
+        background: #dadada;
+        box-shadow: 0 0 0 #cccccc,
+            0 0 0 #ffffff,
+            10px 10px 10px #cccccc inset,
+            -10px -10px 10px #ffffff inset;
+    }
+
+    25% {
+        width: 200px;
+        height: 200px;
+        background: #A2A2A2;
+        box-shadow: 10px 10px 10px #cccccc,
+            10px 10px 10px #ffffff,
+            0 0 0 #cccccc inset,
+            0 0 0 #ffffff inset;
+    }
+
+    50% {
+        width: 200px;
+        height: 2500px;
+        background: #dadada;
+        box-shadow: 10px 10px 10px #cccccc,
+            10px 10px 10px #ffffff,
+            0 0 0 #cccccc inset,
+            0 0 0 #ffffff inset;
+    }
+
+    100% {
+        width: 3530px;
+        height: 2500px;
+        background: #A2A2A2;
+        box-shadow: 10px 10px 10px #cccccc,
+            10px 10px 10px #ffffff,
+            0 0 0 #cccccc inset,
+            0 0 0 #ffffff inset;
+    }
+}
+
+.logo{
+    display: none;
+    position: absolute;
+    width: 17rem;
+    height: 10rem;
+    left: calc(50% - 200px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo_show{
+    display: block;
+}
+.logo_hidden{
+    display: none;
+}
+
+.text {
+    font-size: 62.5%;
+    color: #00193D;
+    font-size: 14rem;
+    font-family: 'Muli', Helvetica, sans-serif;
+    font-weight: 900;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    animation: text 700ms ease-in 1;
+    transform: translatez(0);
+}
+
+.text-b {
+    left: 0rem;
+    transform: translate3d(0, 0, 0);
+    animation: text-b 1050ms ease-in 1;
+}
+
+.text-l {
+    left: 12rem;
+    animation-delay: 370ms;
+}
+
+.text-a {
+    left: 20rem;
+    animation-delay: 480ms;
+}
+
+.text-s {
+    left: 32rem;
+    animation-delay: 590ms;
+}
+.text-t {
+    left: 43rem;
+    animation-delay: 720ms;
+}
+
+.coast {
+    position: absolute;
+    left: 1.3rem;
+    bottom: 1.7rem;
+    width: 22.2rem;
+    height: 6.2rem;
+    display: inline-block;
+    animation: coast 2100ms linear 1;
+    transform: translateZ(0);
+}
+
+.wave-rel-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 3rem;
+    perspective-origin: 0%, 50%;
+}
+
+.wave {
+    position: absolute;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 6.1rem;
+    background: radial-gradient(ellipse at center, rgba(116, 241, 252, 1) 0%, rgba(50, 230, 255, 1) 73%, rgba(21, 199, 250, 1) 100%);
+    display: inline-block;
+    animation: wave 2100ms linear 1;
+    will-change: width;
+    transform: translateZ(0) scale(0);
+}
+
+@keyframes text {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    30% {
+        transform: translate3d(0, -8rem, 0);
+    }
+
+    45% {
+        transform: translate3d(0, -8rem, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes text-b {
+    0% {
+        transform: translate3d(0, -8rem, 0);
+    }
+
+    38% {
+        transform: translate3d(0, -8rem, 0);
+    }
+
+    69% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes coast {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    23% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(48rem, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(48rem, 0, 0);
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+        width: 6.2rem;
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    23% {
+        width: 5.2rem;
+    }
+
+    32% {
+        width: 8.1rem;
+    }
+
+    42% {
+        width: 14rem;
+        transform:  scale(1, 1);
+    }
+
+    51% {
+        width: 10rem;
+        transform: scale(0.6, 0.2);
+    }
+
+    52% {
+        transform:  scale(0);
+    }
+
+    100% {
+        transform:  scale(0);
+    }
+}
