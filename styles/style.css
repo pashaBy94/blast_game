@@ -45,6 +45,8 @@ body {
     padding-right: 115px;
     line-height: 150px;
     box-shadow: 0 2px 2px 2px #777D83;
+    will-change: transform;
+
 }
 
 .game_panel-count-radial,
@@ -83,6 +85,7 @@ body {
     box-shadow: 0 2px 4px 1px #005EA7;
     border-radius: 75px;
     padding: 4px;
+    will-change: transform;
 }
 
 .progress {
@@ -90,6 +93,7 @@ body {
     width: 0;
     border-radius: 75px;
     background: linear-gradient(#E3FFC8, #00FD00, #00A000, #00FD00);
+    will-change: transform;
 }
 
 .panel_glasses-wrap {

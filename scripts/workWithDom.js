@@ -43,7 +43,7 @@ function createTail(t, l, row, col, color, isBomb = false) {
     tail.style.left = t + 'px';
     tail.style.width = config.tailSize + 'px';
     tail.style.height = config.tailSize + 'px';
-
+    tail.style.willChange = 'transform';
     let coin = document.createElement('div');
     coin.classList.add('coin');
     coin.style.backgroundColor = isBomb ? 'black' : color;
