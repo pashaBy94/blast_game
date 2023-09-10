@@ -575,7 +575,7 @@ border-radius: 50%;
 
 .delete_tail {
     animation-name: my-animation;
-    animation-duration: .5s;
+    animation-duration: .3s;
     animation-direction: alternate;
     animation-timing-function: linear;
 

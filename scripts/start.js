@@ -73,7 +73,7 @@ function updategrid() {
         setTimeout(() => {
             setFail();
             newGame();
-        }, 800)
+        }, 600)
     }
 }
 function createGrid() {
@@ -167,22 +167,22 @@ function deleteAndPrintTails() {
                 setTimeout(() => {
                     setWins();
                     newGame();
-                }, 800)
+                }, 300)
             }
             if (!isFullProgress() && !isHaveCountStep()) {
                 setTimeout(() => {
                     setFail();
                     newGame();
-                }, 800)
+                }, 600)
             }
             if (!isStillMove() && player.countUpdates === config.maxCountUpdates && !isFullProgress() && !isHaveCountStep()) {
                 setTimeout(() => {
                     setFail();
                     newGame();
-                }, 800)
+                }, 600)
             }
         }, 200)
-    }, 500);
+    }, 290);
 }
 function getHavMoreTail(row, col) {
     const grid = components.tails;
