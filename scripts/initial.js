@@ -6,5 +6,5 @@ setTimeout(()=>{
     setTimeout(()=>{
         logo.classList.add('logo_hidden')
         wrap.classList.add('wrap_show')
-        },2000)
-},4000);
+        },2000)//2000
+},4000);///4000

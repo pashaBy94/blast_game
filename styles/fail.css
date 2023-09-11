@@ -22,11 +22,11 @@
     border-radius: 100%;
     background: transparent;
     display: block;
-    box-shadow: 0 0 150px 100px rgba(255, 255, 255, 0.6),
-        200px 0 200px 150px rgba(255, 255, 255, 0.6),
-        -250px 0 300px 150px rgba(255, 255, 255, 0.6),
-        550px 0 300px 200px rgba(255, 255, 255, 0.6),
-        -550px 0 300px 200px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 70px 50px rgba(255, 255, 255, 0.6),
+        100px 0 100px 75px rgba(255, 255, 255, 0.6),
+        -125px 0 150px 75px rgba(255, 255, 255, 0.6),
+        2750px 0 150px 100px rgba(255, 255, 255, 0.6),
+        -2750px 0 150px 100px rgba(255, 255, 255, 0.6);
 }
 
 
@@ -46,10 +46,10 @@
 
 .fail_text h1 span {
     position: relative;
-    top: 40px;
+    top: 10px;
     display: inline-block;
     animation: bounce 0.3s ease infinite alternate;
-    font-size: 160px;
+    font-size: 50px;
     color: #fff;
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
         0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
@@ -118,7 +118,7 @@
 }
 @keyframes bounce {
     100% {
-        top: -40px;
+        top: -10px;
         text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
             0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
             0 50px 25px rgba(0, 0, 0, 0.2);
@@ -127,14 +127,14 @@
 
 .face {
     position: absolute;
-    bottom: 200px;
-    right: 200px;
+    bottom: 50px;
+    right: 50px;
 }
 
 .myFace {
     position: relative;
-    width: 610px;
-    height: 610px;
+    width: 310px;
+    height: 310px;
     border-radius: 50%;
     background-color: #ffcd00;
     background: linear-gradient(#ffcd00, #ff9100);
@@ -148,19 +148,19 @@
 .myFace::before {
     content: "";
     position: absolute;
-    bottom: 120px;
-    width: 200px;
-    height: 80px;
+    bottom: 30px;
+    width: 100px;
+    height: 40px;
     background: #c810dc;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     transition: 0.5s;
 }
 
 .myFace:hover::before {
-    bottom: 120px;
-    width: 200px;
-    height: 20px;
+    bottom: 50px;
+    width: 100px;
+    height: 10px;
     background: #c810dc;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -174,8 +174,8 @@
 
 .mytinyEyes .tinyEye {
     position: relative;
-    width: 140px;
-    height: 140px;
+    width: 70px;
+    height: 70px;
     display: block;
     background: #fff;
     margin: 0 15px;
@@ -186,10 +186,9 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 30px;
-    /* transform: translate(-50%, -50%); */
-    width: 70px;
-    height: 70px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
     background: #333;
     border-radius: 50%;
 }

@@ -7,7 +7,7 @@ function tinyEyeball(event) {
         let eyeHeight = tinyEye.getBoundingClientRect().top + tinyEye.clientHeight / 2;
         let radian = Math.atan2(event.pageX - eyeWidth, event.pageY - eyeHeight);
 
-        let rot = radian * (90 / Math.PI) * -1 + 280;
+        let rot = radian * (90 / Math.PI) * -1 + 320;
         tinyEye.style.transform = "rotate(" + rot + "deg)";
     });
 }

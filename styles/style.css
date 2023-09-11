@@ -13,7 +13,7 @@ p {
 
 body {
     font-family: 'Bangers', cursive;
-    font-size: 80px;
+    font-size: 30px;
     letter-spacing: 0.9;
     color: white;
 }
@@ -21,29 +21,29 @@ body {
 .game {
     background-color: #A2A2A2;
     overflow: hidden;
-    width: 3530px;
-    height: 2500px;
+    width: 1200px;
+    height: 700px;
 }
 
 .game_panel {
-    height: 290px;
+    height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 110px;
+    margin-bottom: 30px;
 }
 
 .game_panel-count,
 .game_button_start,
 .game_panel-glasses,
 .game_button_refresh {
-    height: 150px;
-    border-radius: 75px;
+    height: 50px;
+    border-radius: 35px;
     background: linear-gradient(#FF91DE, #AE004A, #E60360);
     position: relative;
-    padding-left: 190px;
-    padding-right: 115px;
-    line-height: 150px;
+    padding-left: 50px;
+    padding-right: 30px;
+    line-height: 50px;
     box-shadow: 0 2px 2px 2px #777D83;
     will-change: transform;
 
@@ -52,38 +52,38 @@ body {
 .game_panel-count-radial,
 .game_panel-glasses-radial {
     background-color: #B5B5B5;
-    width: 156px;
-    height: 156px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     position: absolute;
-    left: -20px;
-    top: -8px;
+    left: -18px;
+    top: 0;
 }
 
 .game_panel-progress-wrap {
-    width: 1325px;
+    width: 500px;
     position: relative;
 }
 
 .game_panel-progress {
     position: relative;
-    top: -55px;
+    top: -10px;
     left: 0;
-    width: 1325px;
-    padding: 30px;
-    padding-top: 80px;
+    width: 500px;
+    padding: 20px;
+    padding-top: 40px;
     background: linear-gradient(#00214B, #003573);
-    border-radius: 75px;
+    border-radius: 40px;
     text-align: center;
     font-weight: bold;
 }
 
 .game_panel-progress-load {
-    height: 100px;
+    height: 50px;
     width: 100%;
     background: linear-gradient(#00071F, #002155);
     box-shadow: 0 2px 4px 1px #005EA7;
-    border-radius: 75px;
+    border-radius: 55px;
     padding: 4px;
     will-change: transform;
 }
@@ -91,7 +91,7 @@ body {
 .progress {
     height: 100%;
     width: 0;
-    border-radius: 75px;
+    border-radius: 45px;
     background: linear-gradient(#E3FFC8, #00FD00, #00A000, #00FD00);
     will-change: transform;
 }
@@ -109,8 +109,9 @@ body {
 }
 
 .game_panel-glasses-add {
-    width: 122px;
-    height: 122px;
+    line-height: 46px;
+    width: 56px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,32 +119,38 @@ body {
     background: linear-gradient(#FFF8CF, #FFD500, #944E00);
     box-shadow: 0 2px 2px 2px #777D83;
 }
+.game_panel-img{
+    width: 46px;
+    height: 46px;
+}
 
 .panel_pause-wrap {
     cursor: pointer;
-    width: 245px;
-    height: 245px;
+    width: 80px;
+    height: 80px;
     background-color: #00CEEA;
-    border-radius: 75px;
-    padding: 5px;
+    border-radius: 20px;
+    padding: 3px;
     box-shadow: 0 2px 2px 2px #777D83;
 }
-
+.game_panel-pause-img{
+    width: 40px;
+    height: 40px;
+}
 .game_panel-pause {
     background-color: #00E6F4;
-    border-radius: 55px;
+    border-radius: 20px;
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     height: 100%;
-    border-radius: 55px;
 }
 
 .game_panel-pause-cont {
     background-color: #00539E;
     height: 100%;
-    border-radius: 55px;
+    border-radius: 20px;
     width: 100%;
-    box-shadow: inset 0 0 6px 1px white;
+    box-shadow: inset 0 0 4px 1px white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,8 +164,8 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 55px;
-    box-shadow: 0 0 12px 4px #00667B;
+    border-radius: 20px;
+    box-shadow: 0 0 7px 3px #00667B;
 }
 
 
@@ -166,20 +173,20 @@ body {
 .game_body {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .game_body-place {
-    min-width: 1600px;
+    min-width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 .game_body-poly-wrapp {
-    padding: 25px;
-    border-radius: 75px;
+    padding: 15px;
+    border-radius: 25px;
     background-color: #64CAD9;
     box-shadow: inset 0 0 6px 1px white;
 
@@ -187,9 +194,9 @@ body {
 
 .game_body-poly {
     position: relative;
-    border-radius: 75px;
+    border-radius: 25px;
     background-color: #001E3B;
-    padding: 40px;
+    padding: 15px;
     box-shadow: inset 0 0 6px 1px white;
 
 }
@@ -207,12 +214,12 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 75px;
-    box-shadow: 0 0 22px 6px #1A505E;
+    border-radius: 25px;
+    box-shadow: 0 0 12px 6px #1A505E;
 }
-
+/*---------------------------------------------------------*/
 .game_body-info {
-    padding: 100px 0;
+    padding: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,21 +227,21 @@ body {
 }
 
 .game_info_glass-wrap {
-    padding: 25px;
-    border-radius: 75px;
-    width: 1080px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 450px;
     background-color: #00FFFF;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .game_info_glass {
-    border-radius: 75px;
+    border-radius: 25px;
     background-color: #00539E;
     height: 100%;
     position: relative;
-    box-shadow: inset 0 0 6px 1px white;
+    box-shadow: inset 0 0 4px 1px white;
     display: flex;
-    padding: 45px 100px;
+    padding: 22px 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -248,22 +255,22 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 75px;
-    box-shadow: 0 0 22px 6px #1A505E;
+    border-radius: 25px;
+    box-shadow: 0 0 11px 3px #1A505E;
 }
 
 .game_info_glass-level {
-    font-size: 3em;
+    font-size: 1.8em;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 490px;
-    height: 490px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    box-shadow: inset 0 0 10px 3px white;
+    box-shadow: inset 0 0 7px 1px white;
     background: linear-gradient(-20deg, #FF91DE, #F20061, #B30556, #F20061, #FF108E);
-    margin-bottom: 55px;
+    margin-bottom: 10px;
 }
 
 .game_info_glass-level::after {
@@ -274,7 +281,7 @@ body {
     left: 0;
     height: 100%;
     border-radius: 50%;
-    box-shadow: 0 0 40px 0 rgb(236, 236, 236);
+    box-shadow: 0 0 20px 0 rgb(236, 236, 236);
 }
 
 .game_info_glass-level::before {
@@ -288,21 +295,17 @@ body {
     background: radial-gradient(circle closest-corner at 61% 71%, transparent 110%, rgba(255, 255, 255, 0.363) 1%);
 }
 
-.game_info_glass-level .blick {
-    top: 50px;
-    right: 110px;
-}
 
 .game_info_glass-count {
     width: 100%;
-    padding: 40px;
-    font-size: 1.3em;
+    padding: 10px;
+    font-size: 1.1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 10px 3px #00193D;
-    border-radius: 75px;
+    box-shadow: inset 0 0 6px 2px #00193D;
+    border-radius: 25px;
     position: relative;
     background: linear-gradient(#00193D, #003778);
 }
@@ -314,12 +317,12 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 75px;
-    box-shadow: 0 0 20px 3px #006FBF;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 3px #006FBF;
 }
 
 .game_info_bonus-text {
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -330,13 +333,13 @@ body {
 }
 
 .game_info_bonus-item-wrap {
-    margin-right: 40px;
-    border-radius: 55px;
-    width: 360px;
-    height: 360px;
-    padding: 7px;
+    margin-right: 20px;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
     background-color: #FF82FE;
-    box-shadow: 0 0 20px 3px #7f8283;
+    box-shadow: 0 0 10px 3px #7f8283;
 }
 
 .light_bust {
@@ -368,13 +371,13 @@ body {
 
 .game_info_bonus-item {
     cursor: pointer;
-    border-radius: 55px;
+    border-radius: 25px;
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     background: linear-gradient(#FF97FF, #E43CE8, #C41BCE, #8810F6);
 }
 .body_item-imag{
@@ -386,22 +389,22 @@ body {
 .body_item-imag-b1,
 .body_item-imag-b2{
     position: relative;
-width: 150px;
-height: 150px;
-border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 .body_item-imag-b1{
     background: linear-gradient(#ff9797, #e83c3c, #ce1b1b, #f61010);
 }
 .body_item-imag-b2{
     background: linear-gradient(#b397ff, #613ce8, #3c1bce, #2710f6);
-    margin-left: -50px;
+    margin-left: -25px;
 }
 .bonus_item-coins {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 75px;
+    border-radius: 15px;
     background: linear-gradient(#300049, #53025B);
 }
 
@@ -410,14 +413,14 @@ border-radius: 50%;
     width: .9em;
     border-radius: 50%;
     background-color: #B5B5B5;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .game_button {
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
 }
 
 .game_button_start,
@@ -428,7 +431,7 @@ border-radius: 50%;
     padding-right: 0;
     justify-content: center;
     align-items: center;
-    margin-right: 240px;
+    margin-right: 50px;
 }
 
 .button_refresh {
@@ -437,27 +440,28 @@ border-radius: 50%;
 
 .game_button_refresh,
 .game_button_start {
-    width: 400px;
+    width: 200px;
 }
 
 .reload {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
 }
 
 .blick {
-    width: 50px;
-    height: 45px;
+    width: 21px;
+    height: 19px;
     position: absolute;
-    right: 40px;
-    top: 15px;
+    right: 15px;
+    top: 5px;
+    filter: blur(2px);
 }
 
 .blick::after {
     content: '';
-    width: 50px;
+    width: 20px;
     position: absolute;
-    height: 40px;
+    height: 16px;
     border-radius: 50%;
     rotate: 40deg;
     background: radial-gradient(white 30%, transparent 70%);
@@ -465,9 +469,9 @@ border-radius: 50%;
 
 .blick::before {
     content: '';
-    width: 25px;
+    width: 10px;
     position: absolute;
-    height: 15px;
+    height: 5px;
     top: 100%;
     left: 100%;
     border-radius: 50%;
@@ -486,7 +490,7 @@ border-radius: 50%;
     cursor: pointer;
     background-size: 100%;
     transition: all .5s .2s ease-in-out;
-    padding: 10px;
+    padding: 2px;
     font-size: 0;
 }
 
@@ -495,14 +499,10 @@ border-radius: 50%;
     bottom: 0;
     left: 0;
     overflow: hidden;
-    padding: 10px;
-    border-radius: 25px;
+    padding: 3px;
+    border-radius: 10px;
     height: 90%;
     width: 90%;
-    box-shadow: 2px -2px 5px red,
-        5px -5px 5px red,
-        8px -8px 5px red,
-        inset 0 0 10px 8px rgba(161, 161, 161, 0.192);
 }
 
 .coin::after {
@@ -512,8 +512,8 @@ border-radius: 50%;
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 25px;
-    box-shadow: 0 0 40px 0 rgb(236, 236, 236);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(236, 236, 236);
 }
 
 .coin::before {
@@ -523,13 +523,13 @@ border-radius: 50%;
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
     background: radial-gradient(circle closest-corner at 61% 71%, transparent 110%, rgba(255, 255, 255, 0.263) 1%);
 }
 
 .coin .blick {
-    top: 10px;
-    right: 30px;
+    top: 0;
+    right: 5px;
 }
 
 .coin:hover {

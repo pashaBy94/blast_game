@@ -6,7 +6,7 @@ const config = {
     maxCountUpdates: 3,
     countProgress: 50,
     maxcountSteps: 10,
-    tailSize: 200,
+    tailSize: 50,
     tailClass: 'tail',
     tailIdPrefix: 'tail',
     movingItems: 0,
@@ -118,6 +118,11 @@ function transferBust(row, col) {
 
 }
 function handlerTail(event) {
+    try{
+    components.content.removeEventListener('click', handlerTail);
+    setTimeout(()=>{
+        components.content.addEventListener('click', handlerTail);
+    },200);
     const target = event.target.closest('.tail');
     let row = parseInt(target.getAttribute('id').split('_')[1]);
     let col = parseInt(target.getAttribute('id').split('_')[2]);
@@ -140,6 +145,10 @@ function handlerTail(event) {
         default:
             break;
     }
+
+} catch(e){
+    console.log(e);
+}
 }
 function bombFire(row, col) {
     const grid = components.tails;
